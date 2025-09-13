@@ -20,3 +20,8 @@ with open("demo.txt" , "r") as f:
 with open("demo.txt" , "w") as f:
     f.write("Kashish Jangid")
     
+with open("sample.txt","w") as f:
+    f.write("sample text")
+
+import os
+os.remove('sample.txt')
