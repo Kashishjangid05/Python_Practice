@@ -8,3 +8,5 @@ print(type(rollno),rollno)
 #type casting can change the datatype from string to int or float
 age = int(input("enter age"))
 print(type(age),age)
+
+# ....
