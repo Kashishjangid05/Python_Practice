@@ -24,14 +24,20 @@
 # s1 = student("Bittu" , 98)
 # print(s1.name , s1.marks)
 
-# methods
-class student:
-    def __init__(self,fullname):
-        self.name = fullname
+# # methods
+# class student:
+#     def __init__(self,fullname):
+#         self.name = fullname
 
-    def welcome(self):
-        print("welcome student")
-        print("welcome student",self.name)
+#     def welcome(self):
+#         print("welcome student")
+#         print("welcome student",self.name)
 
-s1 = student("Bittu")
-s1.welcome()
+# s1 = student("Bittu")
+# s1.welcome()
+
+# # static methods
+# class student:
+#     @staticmethod              #does not wrk staticmethod
+#     def college():
+#         print("abc college")
