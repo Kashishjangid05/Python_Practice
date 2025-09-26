@@ -155,14 +155,63 @@
 # print(c1.type)
 
 # ----------class method--------------
-class Person:
-    name = "naresh"
+# class Person:
+#     name = "naresh"
 
-    @classmethod
-    def changeName(cls, name):
-        cls.name = name
+#     @classmethod
+#     def changeName(cls, name):
+#         cls.name = name
 
-p1 = Person()
-p1.changeName("bittu")
-print(p1.name)
-print(Person.name)
+# p1 = Person()
+# p1.changeName("bittu")
+# print(p1.name)
+# print(Person.name)
+
+# -----------@property method-----------
+# class Student:
+#     def __init__(self , phy , chem , maths):
+#         self.phy = phy
+#         self.chem = chem
+#         self.maths = maths
+
+#     @property
+#     def cal_percentage(self):
+#         return str((self.phy + self.chem + self.maths)/3) + "%"
+
+# stu = Student(97 , 98 , 93)
+# print(stu.cal_percentage)
+
+# stu.phy = 88
+# print(stu.cal_percentage)
+
+# -----------Operator Overloading---------
+class Complex:
+    def __init__(self , real , img):
+        self.real = real
+        self.img = img
+
+    def showNumber(self):
+        print(self.real , "i +" , self.img , "j")
+
+    def __add__(self , num2):
+        newReal = self.real + num2.real
+        newImg = self.img + num2.img
+        return Complex(newReal,newImg)
+
+    def __sub__(self , num2):
+        newReal = self.real - num2.real
+        newImg = self.img - num2.img
+        return Complex(newReal,newImg)
+
+
+num1 = Complex(1,3)
+num1.showNumber()
+
+num2 = Complex(2,6)
+num2.showNumber()
+
+num3 = num1+num2
+num3.showNumber()
+
+num4 = num1-num2
+num4.showNumber()
