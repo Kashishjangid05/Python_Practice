@@ -1,0 +1,17 @@
+#inputs are rent, food,electricity unit spend, charge per unit, total person, extra
+#output are total bill, total payment calculate divided by total number of person
+
+rent = int(input("Enter the rent payed for room = "))
+food = int(input("Enter the price of food spend = "))
+electricity_spend = int(input("Enter the electricity unit = "))
+charge_per_unit = int(input("Enter the charge per unit in that area = "))
+total_person = int(input("Enter total person living in room = "))
+
+total_bill = electricity_spend * charge_per_unit
+print("total_bill = ",total_bill)
+
+total = rent+food+total_bill
+print(total)
+
+payment = total/ total_person
+print(payment)
