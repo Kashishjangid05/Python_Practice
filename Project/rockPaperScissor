@@ -1,0 +1,48 @@
+"""
+user_input = rock , paper , scissor
+comp_input = randomly
+
+1. Rock
+rock-rock = tie
+rock-paper = paper win
+rock-scissor = rock win
+
+2. Paper
+paper-paper = tie
+paper- rock = paper win
+paper-scissor = scissor win
+
+3. Scissor
+scissor-scissor = tie
+scissor-rock = rock win
+scissor-paper = scissor win
+"""
+
+import random
+list = ["rock" , "paper" , "scissor"]
+user_input = input("Enter your move: Rock, Paper, Scissor = ")
+comp_input = random.choice(list)
+
+print(f"user_input = {user_input} , comp_input = {comp_input}")
+
+if user_input == comp_input:
+    print("match tie") 
+
+elif user_input == "rock":
+    if comp_input == "paper":
+        print("computer wins")
+    else:
+        print("you win")
+    
+elif user_input == "paper":
+    if comp_input == "rock":
+        print("you win")
+    else:
+        print("computer win")
+
+elif user_input == "scissor":
+    if comp_input == "rock":
+        print("computer win")
+    else:
+        print("you win")
+
