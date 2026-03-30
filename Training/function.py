@@ -1,0 +1,10 @@
+s = "hello world"
+print(s.upper())
+print(s.lower())
+print(s.capitalize())
+print(s.title())
+print(s.index('r'))
+print(s.count('l'))
+print(s.rindex('h'))
+print(s.find('e'))
+print(s.find('f'))

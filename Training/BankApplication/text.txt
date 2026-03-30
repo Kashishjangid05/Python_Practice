@@ -1,0 +1,4 @@
+create account -- username, account number,amount(default 0)
+check balance -- account number
+withdraw -- account number , amount
+deposit -- account number , amount
